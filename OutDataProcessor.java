@@ -35,6 +35,7 @@ public class OutDataProcessor {
         String inName=in.next();
         System.out.print("Enter the name of the file you wish to store the processed data: ");
         String outName=in.next();
+        in.close();
         OutDataProcessor obj = new OutDataProcessor(inName,outName);
         obj.extractLine();
         System.out.println("Processing Complete!!");
